@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3AF02A24-72EA-4DDB-AF2B-F5CA2056CB8C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Euler</RootNamespace>
+    <AssemblyName>Euler</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlphanumericComparer.cs" />
+    <Compile Include="Attributes\ProblemAttribute.cs" />
+    <Compile Include="Extensions\BigNumber.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
+    <Compile Include="Extensions\Node.cs" />
+    <Compile Include="Extensions\Permutations.cs" />
+    <Compile Include="IProblem.cs" />
+    <Compile Include="Extensions\MathStuff.cs" />
+    <Compile Include="Problems\P000\Problem21.cs" />
+    <Compile Include="Problems\P000\Problem24.cs" />
+    <Compile Include="Problems\P000\Problem37.cs" />
+    <Compile Include="Problems\P000\Problem01.cs" />
+    <Compile Include="Problems\P000\Problem10.cs" />
+    <Compile Include="Problems\P000\Problem11.cs" />
+    <Compile Include="Problems\P000\Problem12.cs" />
+    <Compile Include="Problems\P000\Problem13.cs" />
+    <Compile Include="Problems\P000\Problem14.cs" />
+    <Compile Include="Problems\P000\Problem15.cs" />
+    <Compile Include="Problems\P000\Problem16.cs" />
+    <Compile Include="Problems\P000\Problem17.cs" />
+    <Compile Include="Problems\P000\Problem18.cs" />
+    <Compile Include="Problems\P000\Problem19.cs" />
+    <Compile Include="Problems\P000\Problem02.cs" />
+    <Compile Include="Problems\P000\Problem20.cs" />
+    <Compile Include="Problems\P000\Problem22.cs" />
+    <Compile Include="Problems\P000\Problem23.cs" />
+    <Compile Include="Problems\P000\Problem25.cs" />
+    <Compile Include="Problems\P000\Problem26.cs" />
+    <Compile Include="Problems\P000\Problem27.cs" />
+    <Compile Include="Problems\P000\Problem28.cs" />
+    <Compile Include="Problems\P000\Problem29.cs" />
+    <Compile Include="Problems\P000\Problem03.cs" />
+    <Compile Include="Problems\P000\Problem30.cs" />
+    <Compile Include="Problems\P000\Problem31.cs" />
+    <Compile Include="Problems\P000\Problem32.cs" />
+    <Compile Include="Problems\P000\Problem33.cs" />
+    <Compile Include="Problems\P000\Problem34.cs" />
+    <Compile Include="Problems\P000\Problem35.cs" />
+    <Compile Include="Problems\P000\Problem36.cs" />
+    <Compile Include="Problems\P000\Problem38.cs" />
+    <Compile Include="Problems\P000\Problem04.cs" />
+    <Compile Include="Problems\P000\Problem39.cs" />
+    <Compile Include="Problems\P000\Problem40.cs" />
+    <Compile Include="Problems\P000\Problem41.cs" />
+    <Compile Include="Problems\P000\Problem42.cs" />
+    <Compile Include="Problems\P000\Problem43.cs" />
+    <Compile Include="Problems\P000\Problem44.cs" />
+    <Compile Include="Problems\P000\Problem45.cs" />
+    <Compile Include="Problems\P000\Problem46.cs" />
+    <Compile Include="Problems\P000\Problem47.cs" />
+    <Compile Include="Problems\P000\Problem49.cs" />
+    <Compile Include="Problems\P000\Problem48.cs" />
+    <Compile Include="Problems\P000\Problem05.cs" />
+    <Compile Include="Problems\P000\Problem50.cs" />
+    <Compile Include="Problems\P000\Problem51.cs" />
+    <Compile Include="Problems\P000\Problem52.cs" />
+    <Compile Include="Problems\P000\Problem06.cs" />
+    <Compile Include="Problems\P000\Problem54.cs" />
+    <Compile Include="Problems\P000\Problem61.cs" />
+    <Compile Include="Problems\P000\Problem67.cs" />
+    <Compile Include="Problems\P000\Problem07.cs" />
+    <Compile Include="Problems\P000\Problem08.cs" />
+    <Compile Include="Problems\P000\Problem09.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Problems\p022_names.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Problems\P100\" />
+    <Folder Include="Problems\P200\" />
+    <Folder Include="Problems\P300\" />
+    <Folder Include="Problems\P400\" />
+    <Folder Include="Problems\P500\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
